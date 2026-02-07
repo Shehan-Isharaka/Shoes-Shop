@@ -1,0 +1,264 @@
+/* ================= HERO ================= */
+.shop-hero {
+    background: radial-gradient(circle at 20% 20%, #1e3a8a, #020617 60%);
+    color: #fff;
+    padding: 60px 0;
+}
+.shop-hero small {
+    letter-spacing: 2px;
+    opacity: .7;
+}
+.shop-hero h1 {
+    font-weight: 800;
+}
+
+/* ================= SEARCH ================= */
+.shop-search input,
+.shop-search select {
+    border-radius: 8px;
+    border: 1px solid #334155;
+    padding: 8px 12px;
+    background: #020617;
+    color: #fff;
+}
+.shop-search button {
+    border-radius: 8px;
+    border: none;
+    padding: 0 14px;
+    background: #2563eb;
+    color: #fff;
+}
+
+/* ================= FILTERS ================= */
+.filter-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    margin-bottom: 20px;
+}
+.filter-card h6 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.filter-card a {
+    display: block;
+    padding: 6px 0;
+    color: #2563eb;
+}
+.filter-card input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+}
+.filter-card button {
+    width: 100%;
+    border: none;
+    background: #020617;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+
+/* ================= SHOP FILTER SIDEBAR ================= */
+
+.filter-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.filter-box h6 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    margin-bottom: 14px;
+    color: #111;
+}
+
+/* ---------------- CATEGORIES ---------------- */
+
+.filter-box a {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.filter-box a:hover {
+    background: #f1f5ff;
+    color: #0d6efd;
+    transform: translateX(3px);
+}
+
+.filter-box a.active {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Parent category accordion */
+.filter-box details {
+    margin-bottom: 10px;
+}
+
+.filter-box summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    color: #111;
+    list-style: none;
+    transition: all .25s ease;
+}
+
+.filter-box summary:hover {
+    background: #eef2ff;
+}
+
+.filter-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter-box details[open] summary {
+    background: #eef2ff;
+    color: #0d6efd;
+}
+
+.filter-box details a {
+    margin-left: 12px;
+    font-size: 13px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.filter-box details a::before {
+    content: "•";
+    position: absolute;
+    left: 6px;
+    color: #0d6efd;
+}
+
+/* ---------------- PRICE FILTER ---------------- */
+
+.filter-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-box input[type="number"] {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-size: 14px;
+    transition: border .2s ease;
+}
+
+.filter-box input[type="number"]:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+.filter-box button {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.filter-box button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(13,110,253,.35);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 991px) {
+    .filter-box {
+        margin-bottom: 16px;
+    }
+}
+
+
+
+/* ================= PRODUCTS ================= */
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,.1);
+    transition: .3s;
+}
+.product-card:hover {
+    transform: translateY(-6px);
+}
+.product-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #f8fafc;
+}
+.product-info {
+    padding: 14px;
+    text-align: center;
+}
+.price .old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: .9rem;
+}
+.price .new {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.view-btn {
+    display: block;
+    margin-top: 10px;
+    background: #020617;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* ================= PAGINATION ================= */
+.shop-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+.shop-pagination a {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #e5e7eb;
+    color: #000;
+}
+.shop-pagination a.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* ================= EMPTY ================= */
+.no-products {
+    background: #e0f2fe;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+

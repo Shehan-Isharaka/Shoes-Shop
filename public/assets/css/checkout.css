@@ -1,0 +1,34 @@
+.checkout-card,
+.checkout-summary {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.checkout-summary {
+    position: sticky;
+    top: 100px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+input, textarea, select {
+    border-radius: 10px !important;
+}
+
+button.btn-dark {
+    transition: all .3s ease;
+}
+
+button.btn-dark:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .checkout-summary {
+        position: static;
+    }
+}

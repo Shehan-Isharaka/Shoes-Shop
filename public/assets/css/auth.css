@@ -1,0 +1,21 @@
+.auth-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px;
+    padding: 8px 22px;
+    margin: 0 6px;
+    color: #111;
+}
+
+.nav-pills .nav-link.active {
+    background: #111;
+}
+
+input.form-control {
+    border-radius: 12px;
+    padding: 10px 14px;
+}
